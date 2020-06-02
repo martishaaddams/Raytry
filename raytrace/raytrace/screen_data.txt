@@ -1,0 +1,7 @@
+cam 0.0 0.0 0.0
+vector 1.0 1.0 1.0
+up 0.0 1.0 0.0
+limit 50.0
+width 400
+height 300 
+realheight 100
