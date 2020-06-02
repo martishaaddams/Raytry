@@ -25,9 +25,9 @@ ScreenData scan_data(const char* myfileName, const char* outputFile){
     if (!myfile.is_open()) {
         throw std::invalid_argument("Error! Can't open your " + std::string(myfileName) + " file\n");
     }//Vec3f cam, normal, up;    float screen, limit, alpha; unsigned int width, height;
-    std::string key; myfile>>key;
+   std::string key; myfile>>key;
     //if (!(key == "cam")) { throw std::invalid_argument("Error! Wrong data_cam " + key + " key\n"); }
-    myfile>> screendata.cam.x >> screendata.cam.y >> screendata.cam.z>>key;
+    //myfile>> screendata.cam.x >> screendata.cam.y >> screendata.cam.z>>key;
 
     if (!(key == "vector")) { throw std::invalid_argument("Error! Wrong data_normal "+ key + " key\n"+myfileName); }
     myfile>> screendata.normal.x >> screendata.normal.y >> screendata.normal.z>>key;

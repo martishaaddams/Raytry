@@ -19,7 +19,7 @@
 
 void autotest() { // Front view
     ScreenData scr_data = scan_data("screen_data.txt", "test.bmp");
-    std::vector<box*> spheres = scan_box("spheres_data.txt", scr_data);
+    std::vector<box*> spheres = scan_box("box_data.txt", scr_data);
     if (spheres.size() == 0) {
         return;
     }
