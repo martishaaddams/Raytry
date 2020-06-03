@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.1)
 project("XRay")
 
-set (CSTRING_SRC "main.cpp")
-set (CSTRING_HDR "geometry.hpp" "data_processing.hpp" "fun.hpp" "autotest.hpp" "my_structs.hpp" "CImg.h")
+set (CSTRING_SRC "main.cpp" "box.cpp" "Figure.cpp")
+set (CSTRING_HDR "geometry.hpp" "data_processing.hpp" "fun.hpp" "autotest.hpp" "my_structs.hpp" "CImg.h" "box.h" "Figure.h")
 
 add_executable("${PROJECT_NAME}" "${CSTRING_SRC}" "${CSTRING_HDR}")
 
