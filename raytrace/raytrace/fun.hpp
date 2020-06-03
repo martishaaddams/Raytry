@@ -1,4 +1,4 @@
-#pragma once
+ #pragma once
 #define M_PI 3.14159265358979323846
 #include <iostream>
 #include <fstream>
@@ -114,7 +114,7 @@ void render(const ScreenData& scr_data, const std::vector<box*>& spheres){
     int color[3];
     cimg_library::CImg<float> img(scr_data.width, scr_data.height, 1, 3);
     int k=0;
-    //#pragma omp parallel for private(color,tmp)
+    #pragma omp parallel for
     for (int j = 0; j < scr_data.height; ++j) {
         for (int i = 0; i < scr_data.width; ++i) {
            //float x = (2 * (i  + 0.5 / (float)scr_data.width - 1) * imageAspectRatio * scale);//and here

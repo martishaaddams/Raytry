@@ -90,7 +90,7 @@ try{
         }
         myfile >> col[0] >> col[1] >> col[2];
         box* sp = new box(curr, r,col);
-        std::cout<<"\n\nmin: "<< sp->min_point<<"radius: "<<sp->max_point<<std::endl;
+        std::cout<<"\n\nmin: "<< sp->min_point<<"max: "<<sp->max_point<<std::endl;
         spheres.push_back(sp);
         scr_data.num_sp ++;
 

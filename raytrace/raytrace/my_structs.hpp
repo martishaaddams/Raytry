@@ -6,7 +6,7 @@
 #include "CImg.h"
 #include "geometry.hpp"
 
-struct Sphere {
+/*struct Sphere {
     Vec3f center;
     float radius;
     Vec3i material;
@@ -17,7 +17,7 @@ struct Sphere {
     ~Sphere(){};
 
     bool ray_intersect(const Vec3f &orig, const Vec3f &dir, float& t0) const;
-};
+};*/
 
 struct ScreenData{
     int width;
@@ -36,7 +36,7 @@ struct ScreenData{
     //std::multimap <float, Sphere*, std::less<float> > distances;//dont know if i need this 
 };
 
-bool Sphere::ray_intersect(const Vec3f &orig, const Vec3f &dir, float &t0) const {
+/*bool Sphere::ray_intersect(const Vec3f &orig, const Vec3f &dir, float &t0) const {
     Vec3f L = center - orig;
     float Lcos = L*dir;
     float d2 = L*L - Lcos*Lcos;
@@ -47,4 +47,4 @@ bool Sphere::ray_intersect(const Vec3f &orig, const Vec3f &dir, float &t0) const
     if (t0 < 0) t0 = t1;        // kasatel
     if (t0 < 0) return false;
     return true;
-}
+}*/
